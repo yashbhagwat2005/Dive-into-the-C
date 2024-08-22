@@ -1,16 +1,23 @@
 #include <stdio.h>
 int main(){
-    printf("Calculate the simple intrest by entring principle,rate,time \n ");
+    printf("Calculate the simple intrest by entring principle,rate,time \n ");4
+    // variables for p,r,t
     int p,r,t;
+    // input from the user for principle
     printf("Enter the principle  ");
     scanf("%d",&p);
+    // input from the user for the rate
     printf("Enter rate");
     scanf("%d",&r);
+    // input from the user for time in years
     printf("Enter time in years");
     scanf("%d",&t);
+    // formula used for simple intrest 
     printf("The simple intrest is %d",(p*r*t)/100);
-
     return 0;
     
     
 }
+
+
+// =)
