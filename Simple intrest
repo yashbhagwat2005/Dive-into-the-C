@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+    printf("Calculate the simple intrest by entring principle,rate,time \n ");
+    int p,r,t;
+    printf("Enter the principle  ");
+    scanf("%d",&p);
+    printf("Enter rate");
+    scanf("%d",&r);
+    printf("Enter time in years");
+    scanf("%d",&t);
+    printf("The simple intrest is %d",(p*r*t)/100);
+
+    return 0;
+    
+    
+}
