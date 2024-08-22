@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+    printf("Calculate the area of a rectangle \n");
+    // variable for the length of the rectangle 
+    int a;
+    // variable for t he breadth of the rectangle
+    int b;
+    // input from the user for the length of the rectangle
+    printf("Enter the length of the rectangle: ");
+    scanf("%d",&a);
+    // infput from the user for the breadth of the rectangle 
+    printf("Enter the breadth of the reactangle: ");
+    scanf("%d",&b);
+    printf("Area of the rectangle is %d",a*b);
+    return 0;
+}
