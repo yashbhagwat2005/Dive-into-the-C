@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+    float rev_sec;
+    float rev_year;
+    float rev_hour;
+    float rev_min;
+    rev_sec = 31558150;
+    rev_year = rev_sec/(60*60*24*365);
+    rev_hour = rev_sec/3600;
+    rev_min = rev_sec/60;
+    printf("%f \n",rev_year);
+    printf("%f \n",rev_hour);
+    printf("%f \n",rev_min);
+    return 0;
+
+}
