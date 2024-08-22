@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int total_salary;
+    int HRM,basic_salary,allowence;
+    printf("Enter basic salary");
+    scanf("%d",&basic_salary);
+    printf("Enter the HRM");
+    scanf("%d",&HRM);
+    printf("Enter the allowence");
+    scanf("%d",&allowence);
+    total_salary = HRM+basic_salary+allowence;
+    printf("Total salary is:%d ",total_salary);
+    return 0;
+}
