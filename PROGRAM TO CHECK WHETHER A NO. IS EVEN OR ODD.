@@ -1,0 +1,16 @@
+# include <stdio.h>
+int main(){
+    // declaring number  as a int variable 
+    int number;
+    // input from the user for a charanumbercter
+    printf("Enter a number  to know if it is an even number or not:  ");
+    scanf("%d",&number);
+    // to check if the number is divisible by 2
+    if (number%2==0)
+        printf("%d is a even number",number);
+    else
+        printf("%d is a odd number",number);
+    return 0;
+}
+
+// =)
