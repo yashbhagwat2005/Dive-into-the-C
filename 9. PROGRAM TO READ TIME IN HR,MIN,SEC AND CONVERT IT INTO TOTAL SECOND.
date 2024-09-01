@@ -1,22 +1,25 @@
 #include <stdio.h>
 int main(){
+    // declaring hour,minute,sec as a integer variable
     int hour,min,sec;
+    // declaring t_sec(total seconds) as a integer variable
     int t_sec;
     printf("Enter the time and convert it into seconds \n");
+    // input from the user for the hour(s) in the time
     printf("Enter hour:");
     scanf("%d",&hour);
+    // input from the user for the minute(s) in the time
     printf("Enter minute: ");
     scanf("%d",&min);
+    // input from the user for the second(s) in the time
     printf("Enter second: ");
     scanf("%d",&sec);
     printf("The time is %d:%d:%d \n",hour,min,sec);
+    // calculating total second by adding hours converted to seconds, minute to seconds and seconds
     t_sec = hour*60*60+min*60+sec;
     printf("%d",t_sec);
-    
     return 0 ;
     
-    
-    
-    
-
 }
+
+// =) 
