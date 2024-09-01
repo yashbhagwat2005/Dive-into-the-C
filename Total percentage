@@ -4,7 +4,7 @@ int main(){
     printf("Calculate your total marks and your percentage \n");
     // declearing 5 subjects as variables
     int s_1,s_2,s_3,s_4,s_5;
-    // declraing maximum marks as a variable
+    // declraing maximum marks as a variable to see if what are the maximum marks can be scored per subject
     int max_marks;
     // decleaing percentage as a float
     float percentage;
@@ -20,12 +20,11 @@ int main(){
     scanf("%d",&s_4);
     printf("Enter the marks of your fifth subject: ");
     scanf("%d",&s_5);
-    printf("Total marks of all the subjects included %d \n",s_1+s_2+s_3+s_4+s_5);
     // Calculate and print the total marks
-    int total_marks = s_1 + s_2 + s_3 + s_4 + s_5;
-    printf("Total marks of all the subjects: %d \n", total_marks);
+    float total_marks = (s_1 + s_2 + s_3 + s_4 + s_5);
+    printf("Total marks of all the subjects: %f \n", total_marks);
 
-    // Correct the percentage calculation
+    // calculation for percentage
     percentage = ((float)total_marks / (max_marks * 5)) * 100;
     printf("Percentage you got: %f", percentage);
 
