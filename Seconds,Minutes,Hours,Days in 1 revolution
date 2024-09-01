@@ -1,16 +1,19 @@
 #include <stdio.h>
 int main(){
-    float rev_sec;
-    float rev_year;
-    float rev_hour;
-    float rev_min;
+    // declaring rev_sec,rev_year,rev_hour,rev_min as a float variable
+    float rev_sec,rev_year,rev_hour,rev_min;
+    // number of seconds in one revolution is 31558150
     rev_sec = 31558150;
+    // calculating from seconds to year,hour,min 
     rev_year = rev_sec/(60*60*24*365);
     rev_hour = rev_sec/3600;
     rev_min = rev_sec/60;
-    printf("%f \n",rev_year);
-    printf("%f \n",rev_hour);
-    printf("%f \n",rev_min);
+    printf(" Revolutions in year unit is %f \n",rev_year);
+    printf("Revolutions in hours is %f \n",rev_hour);
+    printf("Revolutions in minutes is %f \n",rev_min);
     return 0;
 
 }
+
+
+// =)
