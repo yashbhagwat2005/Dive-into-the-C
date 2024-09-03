@@ -1,35 +1,42 @@
-#include <stdio.h>
 
+#include <stdio.h>
 int main() {
-    int u_operator;
-    float num_1,num_2;
-    printf("Welcome to calculator please read the below menu before using the calculator");
-    printf("To use the + operator enter 1\n");
-    printf("To use the - operator enter 2\n");
-    printf("To use the / operator enter 3\n");
-    printf("Please enter the appropriate number from the menu ");
-    scanf("%d",&u_operator);
-    printf("Enter the first number: \n");
-    scanf("%f",&num_1);
-    printf("Enter the second number: \n");
-    scanf("%f",&num_2);
-    switch(u_operator){
-    case 1:
-        printf("The output is %f",num_1+num_2);
-        break;
-    case 2:
-        printf("The output is %f",num_1-num_2);
-        break;
-    case 3:
-        printf("The output is %f",num_1/num_2);
-        break;
-    default:
-        printf("Enter the appropriate number");
-        return 1;
-        break;
-    return 0;
+    char u_operator;
+    float num_1, num_2;
+
+    // input from user to enter an operator
+    printf("Enter an operator (+, -, /): ");
+    scanf(" %c", &u_operator); 
+
+    // input from the user for the two numbers
+    printf("Enter the first number: ");
+    scanf("%f", &num_1);
+    printf("Enter the second number: ");
+    scanf("%f", &num_2);
+
+    // Perform the operation based on the operator
+    switch (u_operator) {
+        case '+':
+            printf("The output is %f\n", num_1 + num_2);
+            break;
+        case '-':
+            printf("The output is %f\n", num_1 - num_2);
+            break;
+        case '/':
+            if (num_2 != 0) { // Check to prevent division by zero
+                printf("The output is %f\n", num_1 / num_2);
+            } else {
+                printf("Error: Division by zero\n");
+            }
+            break;
+        default:
+            printf("Error: Invalid operator\n");
+            return 1; 
     }
+
+    return 0; 
 }
 
 
 // =)
+
