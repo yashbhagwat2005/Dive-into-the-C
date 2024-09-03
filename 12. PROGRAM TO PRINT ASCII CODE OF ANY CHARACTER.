@@ -9,6 +9,8 @@ int main(){
     //accessing the ascii code of the letter 
     ascii_code = letter;
     printf("The ascii code of the letter is %d",ascii_code);
-    return 0;
-    
+    return 0; 
 }
+
+
+// =)
