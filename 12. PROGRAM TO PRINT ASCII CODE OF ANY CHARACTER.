@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+    // declaring letter and ascii_code as a charecter varible and integer variable respectively
+    char letter;
+    int ascii_code;
+    // input from the user for the letter 
+    printf("Enter a letter to know the ascii code of the letter");
+    scanf("%c",&letter);
+    //accessing the ascii code of the letter 
+    ascii_code = letter;
+    printf("The ascii code of the letter is %d",ascii_code);
+    return 0;
+    
+}
