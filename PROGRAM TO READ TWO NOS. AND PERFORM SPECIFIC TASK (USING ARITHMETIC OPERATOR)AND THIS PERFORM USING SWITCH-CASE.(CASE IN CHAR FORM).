@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    char u_operator;
+    float num_1,num_2;
+    printf("Welcome to calculator please read the below menu before using the calculator");
+    printf("To use the + operator enter +\n");
+    printf("To use the - operator enter -\n");
+    printf("To use the / operator enter / \n");
+    printf("Please enter the appropriate number from the menu ");
+    scanf("%c",&u_operator);
+    printf("Enter the first number: \n");
+    scanf("%f",&num_1);
+    printf("Enter the second number: \n");
+    scanf("%f",&num_2);
+    switch(u_operator){
+    case '+':
+        printf("The output is %f",num_1+num_2);
+        break;
+    case '-':
+        printf("The output is %f",num_1-num_2);
+        break;
+    case '/':
+        printf("The output is %f",num_1/num_2);
+        break;
+    default:
+        printf("Enter the appropriate number");
+        return 1;
+        break;
+    return 0;
+    }
+}
+
+
+// =)
