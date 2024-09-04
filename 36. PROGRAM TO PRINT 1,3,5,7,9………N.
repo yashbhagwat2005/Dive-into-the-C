@@ -6,7 +6,7 @@ int main(){
     // input from the user for how long will be the series
     printf("Enter a number to decide how long the series will be: \n");
     scanf("%d",&number);
-    i = number;
+    i = number-1;
     n = 1;
     printf("%d",n);
     while(i!=0){
