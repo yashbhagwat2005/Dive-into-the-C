@@ -12,14 +12,11 @@ int main(){
     // input from the user for the marks in chemistry
     printf("Enter your marks in Chemistry out off 200: ");
     scanf("%f",&C);
-    // input from the user for the marks in english
-    printf("Enter your marks in English out off 200: ");
-    scanf("%f",&E);
     // input from the user for the marks in entrance exam
     printf("Enter your marks in Entrance exam marks out off 100: ");
     scanf("%f",&CM);
     // calculation of the cut off mark 
-    CM = M/2+P/2+C/2+E;
+    CM = M/2+P/2+C/2+CM;
     printf("The cut off mark of a student is :%f",CM);
     return 0 ;
 }
