@@ -17,7 +17,7 @@ int main() {
     b = c;  
     printf("Value of a is %d\n", a);
     printf("Value of b is %d\n", b);
-    printf("Both the variables have been swapped succesfully!")
+    printf("Both the variables have been swapped succesfully!");
     
     return 0;
 }
