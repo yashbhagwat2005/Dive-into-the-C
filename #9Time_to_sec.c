@@ -54,7 +54,7 @@ int main(){
         printf("The time is %d:%d:%d\n", hour, min, sec);
     }
     // calculating total second by adding hours converted to seconds, minute to seconds and seconds
-    printf("The total time of the given time is %d",t_sec);
+    printf("The total second of the given time is %d",t_sec);
     return 0 ;
     
 }
