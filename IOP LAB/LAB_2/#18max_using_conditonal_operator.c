@@ -9,7 +9,7 @@ int main() {
     scanf("%d",&b);
     printf("Enter the third number");
     scanf("%d",&c);
-    // Use nested conditional operators to find the greatest of three numbers
+    // Using nested conditional operators to find the greatest of three numbers
     int greatest = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
     printf("The greatest number is: %d\n", greatest);
     
