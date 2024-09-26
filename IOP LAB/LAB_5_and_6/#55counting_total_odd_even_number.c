@@ -12,16 +12,11 @@ int main(){
     }
     // counting the total number of even number and odd numbers by checking if the element is divisible by 2
     for (int i = 0; i<10 ;i++){
-        if (i%2!=0){
+        if (a[i]%2!=0){
             count_o+=1;
         }
-        else if (i%2==0){
-            count_e+=1;
-        }
+        count_e = 10-count_o;
     }
     printf("\nTotal number of odd number: %d",count_o);
     printf("\nTotal number of even number: %d",count_e);
 }
-
-
-// =)
