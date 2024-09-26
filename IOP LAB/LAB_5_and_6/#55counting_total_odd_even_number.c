@@ -22,3 +22,6 @@ int main(){
     printf("\nTotal number of odd number: %d",count_o);
     printf("\nTotal number of even number: %d",count_e);
 }
+
+
+// =)
