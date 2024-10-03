@@ -10,7 +10,6 @@ int main() {
     for (int i = 0; i < attempts; i++) {
         printf("Enter your guess: ");
         scanf("%d", &guess);
-
         if (guess == lucky_number) {
             printf("Congratulations! You guessed the lucky number!\n");
             break;
@@ -19,9 +18,11 @@ int main() {
         } else {
             printf("Too high!\n");
         }
-
         printf("%s\n", (i == attempts - 1) ? "Game over! You ran out of attempts." : "Try again.");
     }
 
     return 0;
 }
+
+
+// =)
