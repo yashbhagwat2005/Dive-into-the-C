@@ -1,34 +1,55 @@
 #include <stdio.h>
 
+// prototyping a function with parameters array_1, array_2, and sum_1_2 to swap the elements of two arrays
+int sum_of_2_arrays(int array_1[], int array_2[], int sum_1_2[]);
+
 int main() {
-    int n_elements;
-    // Ask for the number of elements
-    printf("Enter the number of elements for arrays A and B: ");
-    scanf("%d", &n_elements);
-    // Declare arrays A and B with size based on n_elements
-    int A[n_elements], B[n_elements], temp;
-    // Input elements for arrays A and B
-    for (int i = 0; i < n_elements; i++) {
-        printf("Enter a number for array A[%d]: ", i);
-        scanf("%d", &A[i]);
-        
-        printf("Enter a number for array B[%d]: ", i);
-        scanf("%d", &B[i]);
+    // declaring array_1 of size 5
+    int array_1[5];
+    
+    // declaring array_2 of size 5
+    int array_2[5];
+    
+    // declaring sum_1_2 to store results (although it's unused here)
+    int sum_1_2[5];
+    
+    // input from the user to store in the 1st array
+    printf("Enter numbers to store in the 1st array: ");
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &array_1[i]);
     }
-    // Swap elements between arrays A and B
-    for (int j = 0; j < n_elements; j++) {
-        temp = A[j];
-        A[j] = B[j];
-        B[j] = temp;
+    
+    // input from the user to store in the 2nd array
+    printf("Enter numbers to store in the 2nd array: ");
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &array_2[i]);
     }
-    printf("Array A after swapping: \n");
-    for (int k = 0; k < n_elements; k++) {
-        printf("%d\t", A[k]);
+    
+    // calling the function to swap the elements of array_1 and array_2
+    sum_of_2_arrays(array_1, array_2, sum_1_2);
+    
+    // printing the elements of the 1st array after swapping
+    printf("Elements of the 1st array: \n");
+    for (int i = 0; i < 5; i++) {
+        printf("%d \n", array_1[i]);
     }
-    printf("\n");
-    printf("Array B after swapping: \n");
-    for (int k = 0; k < n_elements; k++) {
-        printf("%d\t", B[k]);
+    
+    // printing the elements of the 2nd array after swapping
+    printf("Elements of the 2nd array: \n");
+    for (int i = 0; i < 5; i++) {
+        printf("%d \n", array_2[i]);
     }
+
     return 0;
+}
+
+// function to swap the elements of array_1 and array_2
+int sum_of_2_arrays(int array_1[], int array_2[], int sum_1_2[]) {
+    int temp;
+    // swapping corresponding elements of array_1 and array_2
+    for (int i = 0; i < 5; i++) {
+        temp = array_1[i];
+        array_1[i] = array_2[i];
+        array_2[i] = temp;
+    }
 }
