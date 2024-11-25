@@ -1,23 +1,45 @@
 #include <stdio.h>
-int main(){
-    // declaring A[input from the user for every element in array A],B[input from the user for every element in array B] 
-    // declaring C[addition of the element of array A and array B in whose index value is the same]
-    int A[3],B[3],C[3];
-    // input from the user for array A and array B
-    // addition of every element and entering it into array c
-    for (int i = 0; i<3;i++){
-        printf(" \nEnter a number for the array A:" );
-        scanf("%d",&A[i]);
-        printf(" \nEnter a number for the array B:" );
-        scanf("%d",&B[i]);
-        C[i]= A[i]+B[i];
-    }
-    // printing the elements from array c 
-    for (int j = 0; j<3;j++){
-        printf("%d \t",C[j]);
+
+// prototyping a function with parameters array_1, array_2, and sum_1_2 to calculate the sum of elements from two arrays
+int sum_of_2_arrays(int array_1[], int array_2[], int sum_1_2[]);
+
+int main() {
+    // declaring array_1 of size 5
+    int array_1[5];
+    
+    // declaring array_2 of size 5
+    int array_2[5];
+    
+    // declaring sum_1_2 to store the sum of elements from array_1 and array_2
+    int sum_1_2[5];
+    
+    // input from the user to store in the 1st array
+    printf("Enter numbers to store in the 1st array: ");
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &array_1[i]);
     }
     
+    // input from the user to store in the 2nd array
+    printf("Enter numbers to store in the 2nd array: ");
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &array_2[i]);
+    }
+    
+    // calling the function to sum the arrays
+    sum_of_2_arrays(array_1, array_2, sum_1_2);
+    
+    // printing the sum of the elements of the given arrays
+    printf("Sum of the elements of the given arrays: \n");
+    for (int i = 0; i < 5; i++) {
+        printf("%d \n", sum_1_2[i]);
+    }
+
+    return 0;
 }
 
-
-// =)
+// function to calculate the sum of the corresponding elements of array_1 and array_2
+int sum_of_2_arrays(int array_1[], int array_2[], int sum_1_2[]) {
+    for (int i = 0; i < 5; i++) {
+        sum_1_2[i] = array_1[i] + array_2[i];  // summing corresponding elements of both arrays
+    }
+}
