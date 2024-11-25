@@ -4,7 +4,7 @@ int main() {
     int arr[10], sum = 0;
 // input from the user for the 10 elements and doing the addition of all the elements
     for (int i = 0; i < 10; i++) {
-        printf("Enter number %d: ", i + 1);
+        printf("Enter a number: ", i + 1);
         scanf("%d", &arr[i]);
         sum += arr[i];
     }
